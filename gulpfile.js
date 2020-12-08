@@ -1,6 +1,5 @@
 const {src, dest, series, parallel} = require('gulp');
 const concat = require('gulp-concat');
-const minify = require('gulp-uglify');
 const del = require('del');
 const imagemin = require('gulp-imagemin');
 
@@ -18,8 +17,7 @@ function pagesTask() {
 
 function scriptsTask() {
   return src('src/scripts/**/*.js')
-    .pipe(uglify())
-    .pipe(dest('dist/js'))
+    .pipe(dest('dist/js'));
 }
 
 function stylesTask() {

@@ -16,10 +16,7 @@
   "dependencies": {
     "gulp-imagemin": "^7.1.0"
     "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^9.0.0",
-    "postcss": "^8.2.0",
-    "uglify-js": "^3.12.1"
+    "gulp-concat": "^2.6.1"
   },
   "repository": {
     "type": "git",
@@ -28,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/Janviii/sd130-assignment-2-repo-7/issues"
   },
-  "homepage": "https://github.com/Janviii/sd130-assignment-2-repo-7#readme",
-  "dependencies": {
-    "gulp-uglify": "^3.0.2"
-  }
+  "homepage": "https://github.com/Janviii/sd130-assignment-2-repo-7#readme"
 }
