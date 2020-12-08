@@ -1,6 +1,7 @@
 const {src, dest, series, parallel} = require('gulp');
 const concat = require('gulp-concat');
 const del = require('del');
+const imagemin = require('gulp-imagemin');
 
 // This task is supposed to clean things
 
@@ -27,6 +28,7 @@ function stylesTask() {
 
 function imagesTask() {
   return src('src/images/**/*')
+  .pipe(imagemin())
     .pipe(dest('dist/images'))
 }
 
