@@ -12,5 +12,8 @@
   "devDependencies": {
     "del": "^6.0.0",
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
   }
 }
