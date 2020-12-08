@@ -1,5 +1,6 @@
 const {src, dest, series, parallel} = require('gulp');
 const concat = require('gulp-concat');
+const minify = require('gulp-uglify');
 const del = require('del');
 
 // This task is supposed to clean things
@@ -16,7 +17,8 @@ function pagesTask() {
 
 function scriptsTask() {
   return src('src/scripts/**/*.js')
-    .pipe(dest('dist/js'));
+    .pipe(uglify())
+    .pipe(dest('dist/js'))
 }
 
 function stylesTask() {
